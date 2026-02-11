@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kopi UMKM Indonesia</title>
+
+    
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+
+        <!-- Font Awesome -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Custom CSS -->
+        <link href="style.css" rel="stylesheet" />
+            <style>
+            .active {
+                font-weight: bolder;
+                color: black !important;
+                background-color: #fcf8f0 !important;
+                border-radius: 10px;
+                /* font-size: large; */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav
+            style="background: rgba(0, 0, 0, 0.6) !important"
+            class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#">Kopi UMKM</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beranda">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produk">Produk</a>
+                        </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#galeri">Galeri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimoni</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontak">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="beranda" class="hero-section d-flex align-items-center section">
+            <div class="container text-center text-white">
+                <h1 class="display-4 mb-4">
+                    Kopi Terbaik dari Petani Indonesia
+                </h1>
+                <p class="lead mb-4">
+                    Nikmati kelezatan kopi pilihan yang dipetik dan diolah
+                    langsung oleh petani lokal
+                </p>
+                <a href="#produk" class="btn btn-light btn-lg">Lihat Produk</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="tentang" class="section-padding bg-dark-subtle text-light section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <img
+                            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+                            class="img-fluid rounded shadow"
+                            alt="About Us Image"
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="mb-4">Tentang Kami</h2>
+                        <p>
+                            Kami adalah UMKM yang berdedikasi untuk menyajikan kopi terbaik dari petani lokal Indonesia. Dengan komitmen terhadap kualitas dan keberlanjutan, kami memastikan setiap cangkir kopi yang Anda nikmati adalah hasil dari kerja keras dan cinta terhadap kopi.
+                        </p>
+                        <p>
+                            Bergabunglah dengan kami dalam mendukung petani lokal dan menikmati kelezatan kopi asli Indonesia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="produk" class="section-padding section">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light">
+                    Produk Unggulan Kami
+                </h2>
+                <div class="row g-4">
+                    <!-- Product cards from templates/index.html remain the same -->
+                    <div class="col-md-4">
+                        <div
+                            class="card product-card h-100 bg-dark-subtle shadow"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1561480337-6645d95535b9"
+                                class="card-img-top"
+                                alt="Kopi Arabika Gayo"
+                                style="height: 250px; object-fit: cover"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-light">
+                                    Kopi Arabika Gayo
+                                </h5>
+                                <p class="card-text text-light">
+                                    Kopi premium dari dataran tinggi Gayo dengan
+                                    cita rasa yang menggoda.
+                                </p>
+                                <p class="card-text text-light">
+                                    <strong>Rp 125.000/250g</strong>
+                                </p>
+                                <a href="#kontak" class="btn btn-primary"
+                                    >Pesan Sekarang</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="card product-card h-100 bg-dark-subtle shadow"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1701256407479-4ad172749508"
+                                class="card-img-top"
+                                alt="Kopi Robusta Lampung"
+                                style="height: 250px; object-fit: cover"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-light">
+                                    Kopi Robusta Lampung
+                                </h5>
+                                <p class="card-text text-light">
+                                    Kopi robusta terbaik dari Lampung dengan
+                                    karakter kuat dan body yang penuh.
+                                </p>
+                                <p class="card-text text-light">
+                                    <strong>Rp 95.000/250g</strong>
+                                </p>
+                                <a href="#kontak" class="btn btn-primary"
+                                    >Pesan Sekarang</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div
+                            class="card product-card h-100 bg-dark-subtle shadow"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1701256407498-89be2f53f868"
+                                class="card-img-top"
+                                alt="Kopi Toraja"
+                                style="height: 250px; object-fit: cover"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title text-light">
+                                    Kopi Toraja
+                                </h5>
+                                <p class="card-text text-light">
+                                    Kopi spesial dari Toraja dengan notes
+                                    karamel dan dark chocolate yang khas.
+                                </p>
+                                <p class="card-text text-light">
+                                    <strong>Rp 135.000/250g</strong>
+                                </p>
+                                <a href="#kontak" class="btn btn-primary"
+                                    >Pesan Sekarang</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="galeri" class="section-padding bg-dark section">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light">Galeri Kami</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407498-89be2f53f868"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 1"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407498-89be2f53f868"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 2"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407498-89be2f53f868"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 3"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407479-4ad172749508"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 4"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407479-4ad172749508"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 5"
+                        />
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="https://images.unsplash.com/photo-1701256407479-4ad172749508"
+                            class="img-fluid rounded shadow"
+                            alt="Gallery Image 6"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rest of the sections from templates/index.html -->
+        <!-- Testimonials Section -->
+        <section id="testimoni" class="section-padding bg-dark section">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light">Apa Kata Mereka?</h2>
+                <div
+                    id="testimonialCarousel"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-inner" style="min-height: 300px">
+                        <div class="carousel-item active">
+                            <div
+                                class="testimonial-card p-4 bg-white rounded shadow text-center"
+                                style="height: 100%"
+                            >
+                                <img
+                                    src="https://i.pravatar.cc/150?img=1"
+                                    alt="Client 1"
+                                    class="testimonial-img mb-4 rounded-circle"
+                                    width="100"
+                                    height="100"
+                                    style="object-fit: cover"
+                                />
+                                <p class="lead mb-4 text-dark">
+                                    "Produk ini benar-benar mengubah cara saya
+                                    bekerja lebih produktif dan nyaman!"
+                                </p>
+                                <h5 class="fw-bold mb-1 text-dark">
+                                    Sarah Johnson
+                                </h5>
+                                <p class="text-muted">Direktur Pemasaran</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="testimonial-card p-4 bg-white rounded shadow text-center"
+                                style="height: 100%"
+                            >
+                                <img
+                                    src="https://i.pravatar.cc/150?img=2"
+                                    alt="Client 2"
+                                    class="testimonial-img mb-4 rounded-circle"
+                                    width="100"
+                                    height="100"
+                                    style="object-fit: cover"
+                                />
+                                <p class="lead mb-4 text-dark">
+                                    "Saya telah mencoba banyak produk serupa,
+                                    tetapi yang satu ini benar-benar menonjol."
+                                </p>
+                                <h5 class="fw-bold mb-1 text-dark">
+                                    Michael Chen
+                                </h5>
+                                <p class="text-muted">
+                                    Insinyur Perangkat Lunak
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div
+                                class="testimonial-card p-4 bg-white rounded shadow text-center"
+                                style="height: 100%"
+                            >
+                                <img
+                                    src="https://i.pravatar.cc/150?img=3"
+                                    alt="Client 3"
+                                    class="testimonial-img mb-4 rounded-circle"
+                                    width="100"
+                                    height="100"
+                                    style="object-fit: cover"
+                                />
+                                <p class="lead mb-4 text-dark">
+                                    "Solusi ini telah menyederhanakan proses
+                                    kami dan meningkatkan kolaborasi tim."
+                                </p>
+                                <h5 class="fw-bold mb-1 text-dark">
+                                    Emily Rodriguez
+                                </h5>
+                                <p class="text-muted">Manajer Proyek</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev"
+                        style="width: 5%"
+                    >
+                        <span
+                            class="carousel-control-prev-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next"
+                        style="width: 5%"
+                    >
+                        <span
+                            class="carousel-control-next-icon"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ Section -->
+        <section id="faq" class="section-padding section">
+            <div class="container">
+                <h2 class="text-center mb-5">Pertanyaan Umum</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faq1"
+                            >
+                                Bagaimana cara memesan kopi?
+                            </button>
+                        </h2>
+                        <div
+                            id="faq1"
+                            class="accordion-collapse collapse show"
+                            data-bs-parent="#faqAccordion"
+                        >
+                            <div class="accordion-body">
+                                Anda dapat memesan melalui form kontak kami atau
+                                menghubungi nomor WhatsApp yang tertera.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#faq2"
+                            >
+                                Berapa lama pengiriman kopi?
+                            </button>
+                        </h2>
+                        <div
+                            id="faq2"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#faqAccordion"
+                        >
+                            <div class="accordion-body">
+                                Pengiriman memakan waktu 2-3 hari kerja untuk
+                                wilayah Jabodetabek dan 3-5 hari untuk luar
+                                Jabodetabek.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontak" class="section-padding bg-dark section">
+            <div class="container">
+                <h2 class="text-center mb-5 text-light">Hubungi Kami</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div
+                            class="contact-form p-4 bg-dark-subtle rounded h-100"
+                        >
+                            <h3 class="mb-4 text-light">Kirim Pesan</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label
+                                        for="name"
+                                        class="form-label text-light"
+                                        >Nama</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control bg-dark border-secondary text-light"
+                                        id="name"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="email"
+                                        class="form-label text-light"
+                                        >Email</label
+                                    >
+                                    <input
+                                        type="email"
+                                        class="form-control bg-dark border-secondary text-light"
+                                        id="email"
+                                        required
+                                    />
+                                </div>
+                                <div class="mb-3">
+                                    <label
+                                        for="message"
+                                        class="form-label text-light"
+                                        >Pesan</label
+                                    >
+                                    <textarea
+                                        class="form-control bg-dark border-secondary text-light"
+                                        id="message"
+                                        rows="4"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">
+                                    Kirim Pesan
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-dark-subtle p-4 rounded h-100">
+                            <h3 class="mb-4 text-light">Lokasi Kami</h3>
+                            <div class="ratio ratio-16x9 mb-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6664463484374!2d106.82495931476882!3d-6.175392395529971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1647833993325!5m2!1sen!2sid"
+                                    style="border: 0"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
+                            <div class="contact-info text-light">
+                                <p>
+                                    <i class="fas fa-map-marker-alt me-2"></i
+                                    >Jl. Kopi No. 123, Jakarta
+                                </p>
+                                <p>
+                                    <i class="fas fa-phone me-2"></i>+62 812
+                                    3456 7890
+                                </p>
+                                <p>
+                                    <i class="fas fa-envelope me-2"></i
+                                    >info@kopiumkm.id
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer py-5 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="text-light">Kopi UMKM</h5>
+                        <p class="text-light">
+                            Menyajikan kopi terbaik dari petani lokal Indonesia
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Kontak</h5>
+                        <p class="text-light">
+                            <i class="fas fa-map-marker-alt"></i> Jl. Kopi No.
+                            123, Jakarta<br />
+                            <i class="fas fa-phone"></i> +62 812 3456 7890<br />
+                            <i class="fas fa-envelope"></i> info@kopiumkm.id
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-light">Ikuti Kami</h5>
+                        <div class="social-links">
+                            <a href="#" class="me-3 text-light"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a href="#" class="me-3 text-light"
+                                ><i class="fab fa-facebook"></i
+                            ></a>
+                            <a href="#" class="me-3 text-light"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 text-center">
+                        <p class="text-light">
+                            &copy; 2024 Kopi UMKM. Hak Cipta Dilindungi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+
+  document.addEventListener("DOMContentLoaded", function () {
+                const sections = document.querySelectorAll(".section"); // Ambil semua section
+                const navLinks = document.querySelectorAll(".nav-link"); // Ambil semua link navbar
+
+                function activateNavLink() {
+                    let currentSection = "";
+
+                    sections.forEach((section) => {
+                        const sectionTop = section.offsetTop - 150; // Menghitung posisi section (70px untuk navbar)
+                        if (window.scrollY >= sectionTop) {
+                            currentSection = section.getAttribute("id"); // Dapatkan ID section yang aktif
+                        }
+                    });
+
+                    // Update class "active" pada navbar
+                    navLinks.forEach((link) => {
+                        link.classList.remove("active"); // Hapus semua class aktif
+                        if (
+                            link.getAttribute("href").substring(1) ===
+                            currentSection
+                        ) {
+                            link.classList.add("active"); // Tambahkan class aktif ke link yang sesuai
+                        }
+                    });
+                }
+
+                window.addEventListener("scroll", activateNavLink); // Jalankan fungsi saat scrolling
+            });
+        </script>
+    
+    </body>
+</html>

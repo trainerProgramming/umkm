@@ -1,0 +1,84 @@
+/* Custom styles to complement Bootstrap */
+:root {
+    --coffee-brown: #6f4e37;
+    --coffee-light: #a67b5b;
+    --cream-color: #fffdd0;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6) !important;
+    /* Transparan */
+    backdrop-filter: blur(10px);
+    /* Efek blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Untuk Safari */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* Bayangan */
+}
+
+/* Hero section overlay */
+.hero-section {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1445510861639-5651173bc5d5");
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    background-attachment: fixed;
+    /* Parallax effect */
+}
+
+/* Product card hover effect */
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom spacing for sections */
+.section-padding {
+    padding: 5rem 0;
+}
+
+/* Testimonial card styling */
+.testimonial-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+}
+
+/* Contact form styling */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+/* Footer styling */
+.footer {
+    background-color: var(--coffee-brown);
+    color: var(--cream-color);
+}
+
+/* About Us section styling */
+#tentang {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--cream-color);
+    padding: 5rem 0;
+}
+
+#tentang img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Ensure the image is not too tall */
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
